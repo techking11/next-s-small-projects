@@ -1,9 +1,25 @@
+import Button from '@/components/button/Button'
 import React from 'react'
+import styles from './contact.module.css'
+import Image from 'next/image'
 
 function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className={styles.contactContainer}>
+      <h1><span>L</span><span className={styles.gradientText}>et's Keep in Touch</span></h1>
+      <div className={styles.container}>
+        <div className={styles.imgContainer}>
+          <Image src="/contact.png" alt="" width={500} height={500} />
+        </div>
+        <div className={styles.contact}>
+          <form action="">
+            <input type="text" placeholder='Name' />
+            <input type="email" placeholder='Email' />
+            <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
+            <Button style={{ fontSize: '16px', padding: '9px 20px' }}>Send</Button>
+          </form>
+        </div>
+      </div>
     </div>
   )
 }

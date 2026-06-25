@@ -49,7 +49,7 @@ function Navbar() {
             {link.name}
           </Link>
         ))}
-        <Button style={{ padding: '7px', margin: '0 0px 0 10px' }}>Logout</Button>
+        <Button style={{ padding: '8px', margin: '0 0px 0 10px' }}>Logout</Button>
       </div>
     </div>
   )
