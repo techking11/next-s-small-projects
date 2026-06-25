@@ -37,7 +37,7 @@ const socialLinks = [
 function Footer() {
   return (
     <div className={styles.footer}>
-      <p>&copy; 20236 Lamamia. All rights reserved.</p>
+      <p>&copy; 2026 Lamamia. All rights reserved.</p>
       <div className={styles['social-icons']}>
         {socialLinks.map((link) => (
           <Link key={link.id} href={link.url} target="_blank">

@@ -1,0 +1,50 @@
+.about {
+  width: 1200px;
+  padding: 20px 0;
+}
+
+.about-header {
+  position: relative;
+}
+
+.about-header-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.about-header h1 {
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 28px;
+}
+
+.about-image {
+  width: 1200px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.about-content {
+  display: flex;
+  gap: 55px;
+  margin: 35px 0;
+}
+
+/* .about-item {} */
+
+.about-item h2 {
+  font-size: 28px;
+}
+
+.about-item p {
+  line-height: 1.5;
+  margin: 15px 0;
+  color: #333;
+}
