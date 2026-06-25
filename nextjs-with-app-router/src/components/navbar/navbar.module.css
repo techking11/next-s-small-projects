@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.link {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
