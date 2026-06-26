@@ -1,0 +1,43 @@
+.container {
+  padding: 2rem 0;
+}
+
+.container h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #30CFD0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.text {
+  width: 50%;
+}
+
+.text h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.text p {
+  line-height: 1.5;
+  font-size: 1.25rem;
+  padding: 25px 0;
+  color: #666;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
