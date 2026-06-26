@@ -1,0 +1,38 @@
+.container {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 3rem;
+}
+
+.content h1 {
+  font-size: 35px;
+  color: #444;
+}
+
+.container p {
+  line-height: 1.78;
+  color: #555;
+  margin: 20px 0;
+}
+
+.imageProfile {
+  display: flex;
+  align-items: center;
+}
+
+.imageProfile img {
+  margin-right: 1rem;
+  border-radius: 50%;
+  height: 50px;
+}
+
+.imageHero img {
+  border-radius: 1rem;
+}
