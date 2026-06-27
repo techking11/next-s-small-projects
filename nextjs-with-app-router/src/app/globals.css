@@ -21,6 +21,10 @@ a {
   color: inherit;
 }
 
+.theme {
+  transition: 1s all ease;
+}
+
 .light {
   background-color: white;
   color: #111;
@@ -28,6 +32,11 @@ a {
 
 .dark {
   background-color: #111;
+  color: #bbb;
+}
+
+.dark p,
+.dark a {
   color: #bbb;
 }
 

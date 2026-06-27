@@ -8,6 +8,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'www.berlinsbi.com',
         pathname: '**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'fakestoreapi.com',
+        pathname: '**'
       }
     ]
   }
