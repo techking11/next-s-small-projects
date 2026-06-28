@@ -48,3 +48,9 @@ a {
   justify-content: space-between;
   margin: 0 auto;
 }
+
+@media (min-width: 1200px) {
+  body {
+    padding: 20px;
+  }
+}

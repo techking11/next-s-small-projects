@@ -1,8 +1,8 @@
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
 
-import styles from './navbar.module.css'
 import Button from '../button/Button'
+import styles from './navbar.module.css'
 import DarkModeToggle from '../darkModeToggle/DarkModeToggle'
 
 const links = [
@@ -42,7 +42,7 @@ function Navbar() {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        Lamamia
+        lamamia
       </Link>
       <div className={styles.nav}>
         <DarkModeToggle />
@@ -51,7 +51,7 @@ function Navbar() {
             {link.name}
           </Link>
         ))}
-        <Button style={{ padding: '8px', margin: '0 0px 0 10px' }}>Logout</Button>
+        <Button>Logout</Button>
       </div>
     </div>
   )

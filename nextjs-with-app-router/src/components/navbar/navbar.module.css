@@ -12,6 +12,12 @@
   color: #333;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
 .link {
   margin-left: 20px;
   font-size: 16px;
@@ -19,8 +25,6 @@
   transition: color 0.3s ease;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: right;
+.nav button {
+  margin-left: 20px;
 }

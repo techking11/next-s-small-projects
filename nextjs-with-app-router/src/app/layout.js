@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Lamamia Application",
+  title: "lama dev",
   description: "Learn with Lamamia",
 };
 

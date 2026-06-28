@@ -1,0 +1,21 @@
+it use auth.js
+googleprovider for auth
+
+and in dashboard -> login and register (name, email, password)
+
+and used bcrypt, useSwr for fetching data
+
+used session for user login or logout
+
+/dashboard
+
+add new post form
+title, description, image, content
+and send button
+
+
+added folder structure
+app/api for route api
+src/models for mongodb
+
+
