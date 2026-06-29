@@ -1,16 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
-
-
-async function getAllData() {
-  const res = await fetch("https://fakestoreapi.com/products", { next: { revalidate: 10 } });
-  if (!res.ok) {
-    throw new Error("Error in fetching all data");
-  }
-  const data = await res.json();
-  return data;
-}
+import { getAllData } from '@/utils/blogData';
 
 async function Blog() {
 
@@ -18,6 +9,7 @@ async function Blog() {
 
   return (
     <div className={styles.container}>
+      <h2>Here are the blog posts.</h2>
       {blogItems.map((item) => (
         <Link href={`/blog/${item.id}`} className={`flex flex-center ${styles.content}`} key={item.id}>
           <div className={styles.imageContainer}>

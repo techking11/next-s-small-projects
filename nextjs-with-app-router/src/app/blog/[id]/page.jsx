@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useParams } from 'next/navigation';
 
+import { getData } from '@/utils/blogData';
 import Loading from '../Loading';
 import styles from './page.module.css'
 
@@ -11,19 +12,7 @@ function BlogPost() {
   const [blog, setBlog] = useState(null);
 
   useEffect(function () {
-
-
-    const getData = async function (id) {
-      const res = await fetch(`https://fakestoreapi.com/products/${id}`, { cache: 'no-store' });
-      if (!res.ok) {
-        throw new Error('Error in fetch single data')
-      }
-      const data = await res.json();
-      setBlog(data);
-    }
-
-    getData(id);
-
+    getData(id, setBlog);
   }, [id]);
 
   if (!blog) {

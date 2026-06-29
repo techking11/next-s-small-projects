@@ -1,33 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './footer.module.css'
-
-const socialLinks = [
-  {
-    id: 1,
-    name: "Facebook",
-    icon: "/1.png",
-    url: "https://www.facebook.com/lamamia"
-  },
-  {
-    id: 2,
-    name: "Instagram",
-    icon: "/2.png",
-    url: "https://www.instagram.com/lamamia"
-  },
-  {
-    id: 3,
-    name: "Twitter",
-    icon: "/3.png",
-    url: "https://www.twitter.com/lamamia"
-  },
-  {
-    id: 4,
-    name: "Youtube",
-    icon: "/4.png",
-    url: "https://www.youtube.com/lamamia"
-  }
-]
+import { socialLinks } from '@/utils/staticData'
 
 function Footer() {
   return (
