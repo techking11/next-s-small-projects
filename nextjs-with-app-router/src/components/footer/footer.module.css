@@ -1,17 +1,11 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 65px;
+  height: 95px;
 }
 
 .social-icons {
-  display: flex;
   gap: 10px;
 }
 
 .icon {
-  width: 25px;
-  height: 25px;
   object-fit: cover;
 }

@@ -14,6 +14,7 @@
 body {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
+  font-size: 1rem;
 }
 
 a {
@@ -49,7 +50,21 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
   body {
     padding: 20px;
   }

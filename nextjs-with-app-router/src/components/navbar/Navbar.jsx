@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 
 import Button from '../button/Button'
@@ -40,11 +39,11 @@ const links = [
 
 function Navbar() {
   return (
-    <div className={styles.container}>
+    <div className={`flex flex-between ${styles.container}`}>
       <Link href="/" className={styles.logo}>
         lamamia
       </Link>
-      <div className={styles.nav}>
+      <div className={`flex flex-center ${styles.nav}`}>
         <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>

@@ -1,7 +1,4 @@
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 95px;
   margin-bottom: 3rem;
 }
@@ -12,15 +9,8 @@
   color: #333;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
 .link {
   margin-left: 20px;
-  font-size: 16px;
   color: #333;
   transition: color 0.3s ease;
 }
