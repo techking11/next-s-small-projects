@@ -1,5 +1,4 @@
 .about {
-  width: 1200px;
   padding: 20px 0;
 }
 
@@ -12,7 +11,7 @@
   bottom: 15px;
   left: 15px;
   padding: 10px;
-  color: white;
+  color: #f2f2f2;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
 }
@@ -37,8 +36,6 @@
   margin: 35px 0;
 }
 
-/* .about-item {} */
-
 .about-item h2 {
   font-size: 28px;
 }
@@ -46,5 +43,4 @@
 .about-item p {
   line-height: 1.5;
   margin: 15px 0;
-  color: #333;
 }

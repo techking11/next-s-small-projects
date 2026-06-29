@@ -1,11 +1,10 @@
 "use client";
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-
-import Apps from '../../../../public/apps.jpg'
-import styles from './page.module.css'
 import { useParams } from 'next/navigation';
+
 import Loading from '../Loading';
+import styles from './page.module.css'
 
 function BlogPost() {
   const { id } = useParams();
@@ -33,17 +32,17 @@ function BlogPost() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.content}>
+      <div className={`flex flex-center ${styles.content}`}>
         <div className={styles.text}>
           <h1>{blog?.title}</h1>
           <p>{blog?.description}</p>
           <div className={styles.imageProfile}>
-            <Image src={Apps} alt='Profile' width={50} />
+            <Image src='/apps.jpg' alt='Profile' width={50} height={50} />
             <span>John Sohh</span>
           </div>
         </div>
         <div className={styles.imageHero}>
-          <Image src={blog?.image} alt='Blog Image' width={300} height={395} />
+          <Image src={blog?.image} alt='Blog Image' width={300} height={300} />
         </div>
       </div>
       <p>{blog?.description}</p>

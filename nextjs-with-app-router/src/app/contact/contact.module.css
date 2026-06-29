@@ -8,8 +8,6 @@
 
 .gradientText {
   background: linear-gradient(to right, #b3b0af, #929190);
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .container {
@@ -17,7 +15,6 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  /* padding: 2rem; */
 }
 
 .imgContainer {

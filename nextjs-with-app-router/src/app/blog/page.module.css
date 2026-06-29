@@ -3,10 +3,7 @@
 }
 
 .content {
-  display: flex;
   gap: 3rem;
-  justify-content: center;
-  align-items: center;
   color: #555;
   margin-bottom: 2rem;
   cursor: pointer;

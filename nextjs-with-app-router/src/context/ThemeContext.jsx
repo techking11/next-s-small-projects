@@ -1,7 +1,6 @@
 "use client";
 
 import { createContext, useContext, useState } from "react";
-
 const ThemeContext = createContext(null);
 
 export function ThemeContextProvider({ children }) {
@@ -21,7 +20,7 @@ export function ThemeContextProvider({ children }) {
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) {
-    throw new Error("useTheme must be in ThemeProvider");
+    throw new Error("useTheme must be within ThemeProvider.");
   }
   return context;
 }

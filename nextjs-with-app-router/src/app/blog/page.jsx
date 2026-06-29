@@ -1,9 +1,6 @@
-import React from 'react'
-
-import styles from './page.module.css'
 import Image from 'next/image'
-import Apps from '../../../public/apps.jpg'
 import Link from 'next/link'
+import styles from './page.module.css'
 
 
 async function getAllData() {
@@ -22,7 +19,7 @@ async function Blog() {
   return (
     <div className={styles.container}>
       {blogItems.map((item) => (
-        <Link href={`/blog/${item.id}`} className={styles.content} key={item.id}>
+        <Link href={`/blog/${item.id}`} className={`flex flex-center ${styles.content}`} key={item.id}>
           <div className={styles.imageContainer}>
             <Image src={item.image} alt={`Blog ${item.id}`} width={250} height={250} />
           </div>

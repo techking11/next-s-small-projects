@@ -1,9 +1,11 @@
-import Button from '@/components/button/Button'
+"use client";
 import Image from 'next/image'
-import React from 'react'
+import { useRouter } from 'next/navigation'
+import Button from '@/components/button/Button'
 import styles from './page.module.css'
 
 function About() {
+  const router = useRouter();
   return (
     <div className={styles.about}>
       <div className={styles['about-header']}>
@@ -16,16 +18,16 @@ function About() {
       <div className={styles['about-content']}>
         <div className={styles['about-item']}>
           <h2>Who Are We?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam.</p>
+          <p>I am your adaptable AI collaborator, built to help you solve problems, analyze data, and create content efficiently. I combine universal, simple language with deep analytical capabilities to give you clear, direct answers without unnecessary fluff.</p>
+          <p>I am your adaptable AI collaborator, built to help you solve problems, analyze data, and create content efficiently. I combine universal, simple language with deep analytical capabilities to give you clear, direct answers without unnecessary fluff.</p>
+          <p>I am your adaptable AI collaborator, built to help you solve problems, analyze data, and create content efficiently. I combine universal, simple language with deep analytical capabilities to give you clear, direct answers without unnecessary fluff.</p>
         </div>
         <div className={styles['about-item']}>
           <h2>What We Do?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam.</p>
-          <Button style={{ padding: '10px', fontSize: '16px' }}>Contact</Button>
+          <p>I am your adaptable AI collaborator, built to help you solve problems, analyze data, and create content efficiently. I combine universal, simple language with deep analytical capabilities to give you clear, direct answers without unnecessary fluff.</p>
+          <p>I am your adaptable AI collaborator, built to help you solve problems, analyze data, and create content efficiently. I combine universal, simple language with deep analytical capabilities to give you clear, direct answers without unnecessary fluff.</p>
+          <p>I am your adaptable AI collaborator, built to help you solve problems, analyze data, and create content efficiently. I combine universal, simple language with deep analytical capabilities to give you clear, direct answers without unnecessary fluff.</p>
+          <Button onClick={() => router.push('/contact')}>Contact</Button>
         </div>
       </div>
     </div>

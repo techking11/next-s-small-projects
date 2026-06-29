@@ -1,29 +1,24 @@
-import React from 'react'
-import styles from './page.module.css'
-
 import Link from 'next/link'
 import Image from 'next/image'
-import Illustration from '../../../public/illustration.png'
-import Website from '../../../public/websites.jpg'
-import Application from '../../../public/apps.jpg'
+import styles from './page.module.css'
 
 const portfolioItems = [
   {
     id: 1,
     title: 'Illustration',
-    image: Illustration,
+    image: '/illustration.png',
     url: '/portfolio/illustration'
   },
   {
     id: 2,
     title: 'Websites',
-    image: Website,
+    image: '/websites.jpg',
     url: '/portfolio/websites'
   },
   {
     id: 3,
     title: 'Applications',
-    image: Application,
+    image: '/apps.jpg',
     url: '/portfolio/applications'
   },
 ]
@@ -35,7 +30,7 @@ function Portfolio() {
       <div className={styles.items}>
         {portfolioItems.map((item) => (
           <Link href={item.url} className={styles.item} key={item.id}>
-            <Image src={item.image} alt={item.title} className={styles.img} />
+            <Image src={item.image} alt={item.title} className={styles.img} width={300} height={300} />
             <h3>{item.title}</h3>
           </Link>
         ))}
