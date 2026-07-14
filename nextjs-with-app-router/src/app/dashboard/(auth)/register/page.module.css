@@ -1,0 +1,41 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.register h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  min-width: 400px;
+}
+
+.form button {
+  padding: 0.8rem;
+  border-radius: 4px;
+  width: 400px;
+}
+
+.loginLink {
+  margin-top: 1rem;
+}
+
+.loginLink a {
+  text-decoration: underline;
+}
