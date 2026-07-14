@@ -2,6 +2,7 @@
   padding: 20px;
   width: 400px;
   margin: 0 auto;
+  transition: 1s all ease;
 }
 
 .login h1 {

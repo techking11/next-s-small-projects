@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import Button from '../button/Button'
+// import Button from '../button/Button'
 import styles from './navbar.module.css'
 import DarkModeToggle from '../darkModeToggle/DarkModeToggle'
 import { links } from '@/utils/staticData'
@@ -18,7 +18,7 @@ function Navbar() {
             {link.name}
           </Link>
         ))}
-        <Button>Logout</Button>
+        {/* <Button>Logout</Button> */}
       </div>
     </div>
   )
